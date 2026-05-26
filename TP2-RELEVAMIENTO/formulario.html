@@ -1,0 +1,42 @@
+
+<div class="contenedor-formulario">
+    <h2>Relevamiento de Hardware</h2>
+    
+    <form action="#" method="post">
+        
+        
+        <label for="nombre_equipo">Nombre / ID del Equipo:</label>
+        <input type="text" id="nombre_equipo" name="nombre_equipo" placeholder="Ej: PC-Aula-01" required>
+        
+        <br><br>
+
+       
+        <label for="fecha_inspeccion">Fecha de Relevamiento:</label>
+        <input type="date" id="fecha_inspeccion" name="fecha_inspeccion" required>
+        
+        <br><br>
+
+        
+        <label for="estado_equipo">Estado del Dispositivo:</label>
+        <select id="estado_equipo" name="estado_equipo" required>
+            <option value="" disabled selected>Seleccione una opción...</option>
+            <option value="operativo">Operativo</option>
+            <option value="averiado_mayor">Averiado </option>
+            <option value="sin_conexion">Sin Conexión / Apagado</option>
+            <option value="baja">Dado de Baja</option>
+        </select>
+        
+        <br><br>
+
+        
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones" rows="5" placeholder="Describa detalles de fallas, mantenimientos, etc."></textarea>
+        
+        <br><br>
+
+        
+        <button type="submit">Guardar Relevamiento</button>
+    
+    </form>
+</div>
+
