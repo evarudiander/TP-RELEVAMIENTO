@@ -1,42 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="contenedor-formulario">
-    <h2>Relevamiento de Hardware</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELEVAMIENTO</title>
+
+    <link rel="stylesheet" href="style.css">
     
-    <form action="#" method="post">
-        
-        
-        <label for="nombre_equipo">Nombre / ID del Equipo:</label>
-        <input type="text" id="nombre_equipo" name="nombre_equipo" placeholder="Ej: PC-Aula-01" required>
-        
-        <br><br>
+</head>
 
-       
-        <label for="fecha_inspeccion">Fecha de Relevamiento:</label>
-        <input type="date" id="fecha_inspeccion" name="fecha_inspeccion" required>
-        
-        <br><br>
+<body>
 
-        
-        <label for="estado_equipo">Estado del Dispositivo:</label>
-        <select id="estado_equipo" name="estado_equipo" required>
-            <option value="" disabled selected>Seleccione una opción...</option>
-            <option value="operativo">Operativo</option>
-            <option value="averiado_mayor">Averiado </option>
-            <option value="sin_conexion">Sin Conexión / Apagado</option>
-            <option value="baja">Dado de Baja</option>
-        </select>
-        
-        <br><br>
+    <div class="contenedor-formulario">
+        <h2>Relevamiento de Hardware</h2>
 
-        
-        <label for="observaciones">Observaciones:</label>
-        <textarea id="observaciones" name="observaciones" rows="5" placeholder="Describa detalles de fallas, mantenimientos, etc."></textarea>
-        
-        <br><br>
+        <form action="#" method="post">
 
-        
-        <button type="submit">Guardar Relevamiento</button>
-    
-    </form>
-</div>
 
+            <label for="nombre_equipo">Nombre / ID del Equipo:</label>
+            <input type="text" id="nombre_equipo" name="nombre_equipo" placeholder="Ej: PC-AULA-01" required>
+
+            <br><br>
+
+            <label for="nombre_usu">Nombre Usuario:</label>
+            <input type="text" id="nombre_usu" name="nombre_usu" placeholder="Ej: Eva Rudiander" required>
+
+            <br><br>
+
+
+            <label for="fecha_inspeccion">Fecha de Relevamiento:</label>
+            <input type="date" id="fecha_inspeccion" name="fecha_inspeccion" required>
+
+            <br><br>
+
+            <label for="Dispositivo">Componentes Críticos:</label>
+            <select id="Dispositivo" name="Dispositivo" required>
+                <option value="" disabled selected>Seleccione una opción...</option>
+                <option value="CPU">Procesador (CPU)</option>
+                <option value="RAM">Memoria RAM</option>
+                <option value="Almacenamiento">Almacenamiento (Discos Días/Sólidos)</option>
+                <option value="PLACA MADRE">Placa Madre</option>
+                <option value="FUENTE DE ALIMENTACION">Fuente de Alimentacion</option>
+
+
+
+            </select>
+
+            <br><br>
+
+            <label for="Dispositivos">Periféricos:</label>
+            <select name="Dispositivos" id="Dispositivos" >
+
+                <option value="" disabled selected>Seleccione una opción...</option>
+                <option value="MONITOR">Monitor</option>
+                <option value="TECLADO">Teclado</option>
+                <option value="MOUSE">Mouse</option>
+                <option value="IMPRESORA">Impresora</option>
+                <option value="ESCANER">Escáner</option>
+                <option value="PARLANTES">Parlantes</option>
+                <option value="OTROS">Otros Periféricos</option>
+              
+
+
+            </select>
+
+             <input type="text" id="OTRO" name="OTRO" placeholder="Otros..." required>
+
+            <br><br>
+
+            <label for="Dispositivos">Componentes Complementarios:</label>
+
+            <select name="Dispositivos" id="Dispositivos" >
+
+                <option value="" disabled selected>Seleccione una opción...</option>
+
+                <option value="NOTE/LAPS">Notebooks / Laptops</option>
+                <option value="MON/PAN"> Monitores / Pantallas</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="MARCAYMODELO">Marca y Modelo:</label>
+            <select id="MARCAYMODELO" name="MARCAYMODELO" required>
+                <option value="" disabled selected>Seleccione una opción...</option>
+                <option value="DELL">Dell</option>
+                <option value="HP">HP</option>
+                <option value="LENOVO">Lenovo</option>
+                <option value="ASUS">Asus</option>
+                <option value="ACER">Acer</option>
+                <option value="OTRO">Otro</option>
+                
+               
+            </select>
+
+             <input type="text" id="NUM" name="NUM" placeholder="Número de Serie..." required>
+
+             <input type="text" id="OTRO" name="OTRO" placeholder="Otros..." required>
+
+            <br><br>
+
+            <label for="estado_equipo">Estado del Dispositivo:</label>
+            <select id="estado_equipo" name="estado_equipo" required>
+                <option value="" disabled selected>Seleccione una opción...</option>
+                <option value="operativo">Operativo</option>
+                <option value="averiado_mayor">Averiado </option>
+                <option value="sin_conexion">Sin Conexión / Apagado</option>
+                <option value="baja">Dado de Baja</option>
+                <option value="OTRO">Otro</option>
+            </select>
+
+            <input type="text" id="SALUD" name="SALUD" placeholder="ESTADO DE SALUD" required>
+            <input type="text" id="OTRO" name="OTRO" placeholder="Otros..." required>
+
+            <br><br>
+
+            
+
+
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" name="observaciones" rows="5"
+                placeholder="Describa detalles de fallas"></textarea>
+
+            <br><br>
+
+            <label for="CAPACIDADRENDIMIENTO">CAPACIDAD Y RENDIMIENTO</label>
+            <textarea id="CAPACIDADRENDIMIENTO" name="CAPACIDADRENDIMIENTO" rows="5"
+                placeholder="Describa."></textarea>
+
+            <br><br>
+
+
+
+
+            <button type="submit">Guardar Relevamiento</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
